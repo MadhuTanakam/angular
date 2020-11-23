@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <th>
+            customerNumber
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Address
+        </th>
+    </thead>
+
+
+<tr *ngFor="let customer of customers;let indexOfelement=index;">  
+    <td *ngIf="(indexOfelement!= 0)">{{customer.cutomerNo}}</td>
+    <td *ngIf="(indexOfelement!= 0)">{{customer.customerName}}</td>
+    <td *ngIf="(indexOfelement!= 0)">{{customer.customerAddress}}</td>
+</tr>
+</table>

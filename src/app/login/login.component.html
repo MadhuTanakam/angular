@@ -1,0 +1,8 @@
+<p>login works!</p>
+<form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)" >
+    <input type = "text" name = "emailid" placeholder = "emailid" id='emailid' ngModel> 
+    <br/> 
+    <input type = "password" name = "passwd" placeholder = "passwd" id='pwd' ngModel> 
+    <br/> 
+    <input type = "submit" value = "submit">  
+</form>
